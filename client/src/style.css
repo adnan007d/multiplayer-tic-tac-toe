@@ -1,0 +1,25 @@
+#board {
+  --width: 300px;
+  --height: 300px;
+  width: var(--width);
+  height: var(--height);
+}
+
+#board > .row {
+  width: calc(var(--width) / 3);
+  height: calc(var(--height) / 3);
+  float: left;
+}
+
+#board .cell {
+  width: calc(var(--width) / 3);
+  height: calc(var(--height) / 3);
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: calc(var(--height) / 3);
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
